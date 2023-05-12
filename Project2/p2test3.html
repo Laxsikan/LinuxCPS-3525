@@ -1,0 +1,37 @@
+
+<html>
+<body>
+CPS 3525 test 3
+<hr>
+Using a C++ program to recive the inputs from HTML form, validate the inputs (numbers, age matches birtday) and save (append) the information to a text file, and display the text file link.
+<br>
+   <form enctype = "multipart/form-data"
+                     action = "../../cgi-bin/CPS3525/p2test3" method = "post">
+   <p>Name: <input type ="text" name="name" />
+   Sex: <input type='radio' name='gender' value='M' />M
+   <input type='radio' name='gender' value='F'/>F
+   <br style="margin:0;">
+   Age: <input type ="text" name="age" size=1 />
+   GPA: <input type ="text" name="gpa" size=1 />
+   Birthday: <input type ="date" name="birthday" />
+   <br style="margin:0;">
+   Courses: &nbsp;
+   <input type='checkbox' name='CPS3525' value='ON'/> CPS 3525
+   <input type='checkbox' name='CPS3740' value='ON'/> 3740
+   <input type='checkbox' name='CPS3250' value='ON'/> 3250
+   <input type='checkbox' name='CPS3500' value='ON'/> 3500
+   <br style="margin:0;">
+   Select term: <SELECT name='term'>
+     <OPTION value='2020S'> 2020 Spring</OPTION>
+     <OPTION value='2020S1'> 2020 Summer 1</OPTION>
+     <OPTION value='2020S2'> 2020 Summer 2</OPTION>
+     <OPTION value='2020F'> 2020 Fall</OPTION>
+   </SELECT>
+   <br> 
+   Paste the object text here:
+   <br style="margin:0;">
+   <textarea name='mydata' cols=20 rows=10 ></textarea>
+   <input type = "submit" value = "Submit" />
+   </form>
+</body>
+</html>

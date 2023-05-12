@@ -1,0 +1,30 @@
+
+<html>
+<body>
+CPS 3525 test 3
+<hr>
+Please use a csv file size < 3000 bytes, otherwise, it won't be displayed!
+   <form enctype = "multipart/form-data"
+                     action = "../../cgi-bin/CPS3525/p2test3.cgi" method = "post">
+   <p>Select csv file 1: <input type = "file" name = "file1" required /></p>
+   <p>Select csv file 2: <input type = "file" name = "file2" required /></p>
+   <p><input type = "submit" value = "Upload" /></p>
+   </form>
+
+Note: The cell in a CSV file might contain quotes. For example: "30,000" for a number.
+<br> <br>
+Please refer to this <a href="https://stackoverflow.com/questions/15738918/splitting-a-csv-file-with-quotes-as-text-delimiter-using-string-split">link </a> for splitting a csv file with quotes as text-delimiter using String.split() 
+<br>
+
+<pre>
+<code>
+public static void main(String[] args) {
+    String s = "Sachin,,M,\"Maths,Science,English\",Need to improve in these subjects.";
+    String[] splitted = s.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
+    System.out.println(Arrays.toString(splitted));
+}
+</code>
+</pre>
+
+</body>
+</html>

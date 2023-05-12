@@ -1,0 +1,42 @@
+
+<html>
+  <body>
+
+   <form enctype = "multipart/form-data"
+                     action = "../cgi-bin/project2" method = "post">
+   <p>User name: <input type ="text" name="name" />
+   Sex: <input type='radio' name='gender' value='M' required />M
+   <input type='radio' name='gender' value='F'/>F
+   <br style="margin:0;">
+   Age: <input type ="text" name="age" size=1 required />
+   GPA: <input type ="text" name="gpa" size=1 required />
+   Birthday: <input type ="date" name="birthday" required />
+   <br style="margin:0;">
+   Interests:  &nbsp; 
+   <input type='checkbox' name='Biking' value='ON'/> Biking
+   <input type='checkbox' name='Reading' value='ON'/> Reading
+   <input type='checkbox' name='Fishing' value='ON'/> Fishing
+   <input type='checkbox' name='Swimming' value='ON'/> Swimming
+   <br style="margin:0;">
+   Select term: <SELECT name='term' required>
+     <OPTION value=''> </OPTION>
+     <OPTION value='2021S'> 2023 Spring</OPTION>
+     <OPTION value='2020S'> 2023 Spring</OPTION>
+     <OPTION value='2020S1'> 2023 Summer 1</OPTION>
+     <OPTION value='2020S2'> 2023 Summer 2</OPTION>
+     <OPTION value='2020F'> 2023 Fall</OPTION>
+   </SELECT>
+   <br> 
+   Paste the first object text data here:
+   <br style="margin:0;">
+   <textarea name='mydata' cols=20 rows=10 required></textarea>
+
+</div>
+<div id='filedemo'>
+   <p><label>2nd object text data file</label>
+   <input type = "file" name = "userfile" required /></p>
+   <input type = "submit" value = "Submit" />
+   </form>
+</div>
+</body>
+</html>
