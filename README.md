@@ -7,7 +7,9 @@ Main Page
 Projects
 --------
 Student Grades Program - A program that accepts a user file and operates on it, creating a clean html result
+
 Local Weather Program - A program that automatically takes a user's ip and serves them their local weather
+
 Zipcode File Analyzer Program - A program that accepts two files, and with Java, emulates SQL commands such as Group By in order to create a clean HTML table result
 
 Notes
